@@ -59,6 +59,6 @@ In algorithm analysis, the space complexity of an algorithm usually refers to it
 
 - Big O Notation gives us a high level understanding of the time and space complexity of an algorithm
 
-- Big O Notation does not care about precision, it only about general trends linear? quadratic? constant?).
+- Big O Notation does not care about precision, it only about general trends (linear? quadratic? constant?).
 
 - The time and space complexity (as measured by Big O) depends only on the algorithm itself, and not on the hardware used to run the algorithm.
