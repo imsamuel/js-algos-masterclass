@@ -20,7 +20,7 @@ The time complexity of an algorithm quantifies the amount of time the algorithm 
 
 When we analyze the efficiency of an algorithm using Big O notation, we are interested only in how the algorithm scales as the input size grows.
 
-Therefore, constants and smaller terms are not taken into account as they do not affect how the algorithm behaves, as input sizes grow to infinity.
+Therefore, constants and smaller terms are not taken into account as they do not affect how the algorithm behaves as input sizes grow to infinity.
 
 Discarding constants:
 
