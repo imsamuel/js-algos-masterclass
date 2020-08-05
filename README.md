@@ -32,7 +32,7 @@ Discarding smaller terms:
 
 - O(_n_ + 10) ➡️ O(n)
 - O(1000*n* + 50) ➡️ O(_n_)
-- O(_n_^ + 5*n* + 8) ➡️ O(_n_^2)
+- O(_n_^2 + 5*n* + 8) ➡️ O(_n_^2)
 
 ### Big O Shorthands
 
