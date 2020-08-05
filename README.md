@@ -24,7 +24,7 @@ Therefore, constants and smaller terms are not taken into account as they do not
 
 Discarding constants:
 
-- O(2) ➡️ O(_n_)
+- O(2*n*) ➡️ O(_n_)
 - O(500) ➡️ O(1)
 - O(13*n*^2) ➡️ O(_n_^2)
 
