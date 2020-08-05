@@ -26,13 +26,13 @@ Discarding constants:
 
 - O(2) ➡️ O(_n_)
 - O(500) ➡️ O(1)
-- O(13*n^2*) ➡️ O(_n^2_)
+- O(13*n*^2) ➡️ O(_n_^2)
 
 Discarding smaller terms:
 
 - O(_n_ + 10) ➡️ O(n)
 - O(1000*n* + 50) ➡️ O(_n_)
-- O(_n^2_ + 5*n* + 8) ➡️ O(_n^2_)
+- O(_n_^ + 5*n* + 8) ➡️ O(_n_^2)
 
 ### Big O Shorthands
 
