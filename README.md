@@ -98,7 +98,7 @@ Why is `Array.push` faster than `Array.unshift`? and why is `Array.pop` faster t
 
 `pop` simply removes the last element in the array - therefore, the elements do not move, so only the `length` property of the array has to be updated.
 
-`shift` removes the first element in the array. This requires a re-indexing of all element in the array, so that `[0]` becomes `[1]` and so on.
+`shift` removes the first element in the array. This requires a re-indexing of all elements in the array, so that `[0]` becomes `[1]` and so on.
 
 **Big O of Array Operations**
 
