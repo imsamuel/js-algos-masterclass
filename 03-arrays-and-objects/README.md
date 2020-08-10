@@ -1,9 +1,5 @@
 # Analyzing Performance of Arrays and Objects
 
-- understand how objects and arrrays work through the lends of big o
-- explain why adding elements to the begining of an array is costly
-- compare and constrast the runtime for arrays and objects, as well as built-in methods
-
 ## Objects
 
 **Big O of Objects**
