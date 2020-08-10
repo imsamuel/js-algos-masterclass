@@ -97,7 +97,7 @@ In algorithm analysis, the space complexity of an algorithm usually refers to it
 
 ## Logarithms
 
-We've encountered some of the most common complexities: O(1), O(_n_), anad O(_n_^2).
+We've encountered some of the most common complexities: O(1), O(_n_), and O(_n_^2).
 
 Sometimes Big O expressions involve more complex mathematical expressions, and one that appears more often than the others is the logarithm.
 
