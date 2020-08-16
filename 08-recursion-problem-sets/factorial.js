@@ -15,7 +15,7 @@ const factorial = (k) => {
   }
 
   if (k === 1) {
-    return k;
+    return 1;
   }
 
   return k * factorial(k - 1);
