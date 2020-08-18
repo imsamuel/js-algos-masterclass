@@ -8,7 +8,7 @@
 
 ## What's a linear search?
 
-It is a method for finding an element within a list. It **sequentially** checks each element of the list until a match is found or the whole list has been searched.
+It is a method for finding a target value within a array. It **sequentially** checks each element of the list until a match is found or the whole list has been searched.
 
 ## What's the runtime of a linear search?
 
