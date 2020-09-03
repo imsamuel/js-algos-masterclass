@@ -34,10 +34,17 @@ class HashTable {
   }
 
   // Set a given key-value pair into the hash table.
-  // (Assumes that user will not set a value using an existing key)
+  // If given key exists, the overwrite its associated value.
   set(key, value) {
     const hashCode = this._hash(key);
     if (this.map[hashCode] !== undefined) {
+      for (let i = 0; i < this.map[hashCode].length; i += 1) {
+        if (this.map[hashCode][i][0] === key) {
+          this.map[hashCode][i][1] = value;
+          return;
+        }
+      }
+
       this.map[hashCode].push([key, value]);
     } else {
       this.map[hashCode] = [[key, value]];
