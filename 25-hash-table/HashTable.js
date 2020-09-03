@@ -17,7 +17,7 @@ class HashTable {
   }
 
   // Get the value associated with the specified key.
-  // Return null if key does not exist within hash map.
+  // Return null if key does not exist within hash table.
   get(key) {
     const hashCode = this._hash(key);
     if (this.map[hashCode] === undefined) {
