@@ -41,7 +41,7 @@ class HashTable {
       for (let i = 0; i < this.map[hashCode].length; i += 1) {
         if (this.map[hashCode][i][0] === key) {
           this.map[hashCode][i][1] = value;
-          return;
+          return true;
         }
       }
 
