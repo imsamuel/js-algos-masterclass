@@ -13,7 +13,7 @@ class Graph {
 
   // Return a boolean based on whether the graph contains the specified
   // vertex.
-  _verticeExists(v) {
+  _vertexExists(v) {
     return this.list[v] !== undefined;
   }
 
