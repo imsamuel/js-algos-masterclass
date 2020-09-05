@@ -5,7 +5,7 @@ class Graph {
     this.list = {};
   }
 
-  // Return a boolean based on whether two given vertices are adjacent
+  // Return a boolean based on whether given vertices are adjacent
   // (connected) by an edge.
   _verticesAdjacent(v1, v2) {
     return this.list[v1].includes(v2);
