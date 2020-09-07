@@ -24,36 +24,38 @@ class PriorityQueue {
 
   // Remove the next entry - the root (entry with the highest priority).
   dequeue() {
-      const [next] = this.values;
-      this.values[0] = this.values.pop();
-      let childLeft, childRight;
-      let curr = 0;
-      while (true) {
-        let childLeftIdx = 2 * curr + 1;
-        let childRightIdx = childLeft + 1;
-        let swap = null;
-        if (childLeftIdx < this.values.length) {
-          childLeft = this.values[childLeftIdx];
-          if (childLeft.priority > this.values[curr].priority) {
-            swap = childLeft;
-          }
-  
-          if (childRightIdx < this.values.length) {
-            childRight = this.values[childRight];
-            if (
-              (swap === null && childRight.priority < this.values[curr].priority) ||
-              (swap !== null && childRight < childLeft.priority)
-            ) {
-              swap = childRightIdx;
-            }
-          }
-  
-          if (swap === null) break;
-          const temp = this.values[curr];
-          this.values[curr] = this.values[swap];
-          this.values[swap] = temp;
-          curr = swap;
+    const [next] = this.values;
+    this.values[0] = this.values.pop();
+    let childLeft, childRight;
+    let curr = 0;
+    while (true) {
+      let childLeftIdx = 2 * curr + 1;
+      let childRightIdx = childLeft + 1;
+      let swap = null;
+      if (childLeftIdx < this.values.length) {
+        childLeft = this.values[childLeftIdx];
+        if (childLeft.priority > this.values[curr].priority) {
+          swap = childLeft;
         }
+
+        if (childRightIdx < this.values.length) {
+          childRight = this.values[childRight];
+          if (
+            (swap === null &&
+              childRight.priority < this.values[curr].priority) ||
+            (swap !== null && childRight < childLeft.priority)
+          ) {
+            swap = childRightIdx;
+          }
+        }
+
+        if (swap === null) break;
+        const temp = this.values[curr];
+        this.values[curr] = this.values[swap];
+        this.values[swap] = temp;
+        curr = swap;
+      }
+    }
   }
 }
 
